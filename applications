@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake Technology: Ethical Implications</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #0056b3; /* Deep blue */
+            color: #fff;
+            padding: 1em 0;
+        }
+
+        header h1 {
+            margin: 0;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+            cursor: pointer;
+        }
+
+        nav ul li:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 1em;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        h2 {
+            color: #0056b3;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 1em auto;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #0056b3;
+            color: #fff;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+
+        a {
+            color: #c82333; /* Deep red for emphasis */
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Deepfake Technology: Ethical Implications</h1>
+            <nav>
+                <ul class="tabs">
+                    <li data-tab="introduction">Introduction</li>
+                    <li data-tab="applications">Applications</li>
+                    <li data-tab="discussion">Discussion</li>
+                    <li data-tab="recommendations">Recommendations</li>
+                    <li data-tab="sources">Sources</li>
+                    <li data-tab="about">About Us</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="introduction" class="tab-content active">
+            <div class="container">
+                <h2>Introduction to Deepfake Technology</h2>
+                <p>Deepfake technology uses artificial intelligence to create highly realistic audio and video that mimic real individuals. This project focuses on the ethical challenges and societal implications of this powerful yet controversial technology.</p>
+                <div class="image-container">
+                    <a href="https://www.example.com" target="_blank">
+                        <img src="deepfake_intro.jpg" alt="Representation of Deepfake Technology">
+                    </a>
+                    <p>Click the image to explore an introduction to deepfake technology.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="applications" class="tab-content">
+            <div class="container">
+                <h2>Applications of Deepfake Technology</h2>
+                <p>Deepfakes are used in various fields, from entertainment and education to harmful purposes like spreading misinformation and fraud.</p>
+                <div class="image-container">
+                    <a href="https://www.example.com" target="_blank">
+                        <img src="deepfake1.png" alt="Applications of Deepfakes in Media">
+                    </a>
+                    <p>Click the image to learn about real-world examples of deepfakes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="discussion" class="tab-content">
+            <div class="container">
+                <h2>Critical Discussion</h2>
+                <p>Deepfake technology poses significant ethical concerns, including privacy violations, erosion of trust, and its potential to undermine democracy.</p>
+                <div class="image-container">
+                    <a href="https://www.example.com" target="_blank">
+                        <img src="deepfake1.png" alt="Ethical Concerns of Deepfakes">
+                    </a>
+                    <p>Click the image to dive into the ethical implications of deepfake technology.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="recommendations" class="tab-content">
+            <div class="container">
+                <h2>Recommendations</h2>
+                <ul>
+                    <li>Invest in AI-powered detection tools to identify deepfakes.</li>
+                    <li>Establish policies to regulate the misuse of this technology.</li>
+                    <li>Raise public awareness about the risks associated with deepfakes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="sources" class="tab-content">
+            <div class="container">
+                <h2>Sources</h2>
+                <ul>
+                    <li><a href="https://www.example.com" target="_blank">Deepfake Technology Overview</a></li>
+                    <li><a href="https://www.example.com" target="_blank">Ethical Challenges of Deepfakes</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="about" class="tab-content">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Group Members: [Your Names]</p>
+                <p>Class: [Your Class]</p>
+                <p>This project aims to explore the ethical and societal implications of deepfake technology.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 [Your Group Name] - IT [Your Course Code]</p>
+        </div>
+    </footer>
+
+    <script>
+        // Tab switching functionality
+        const tabs = document.querySelectorAll(".tabs li");
+        const tabContents = document.querySelectorAll(".tab-content");
+
+        tabs.forEach(tab => {
+            tab.addEventListener("click", () => {
+                // Remove active class from all tabs and contents
+                tabs.forEach(t => t.classList.remove("active"));
+                tabContents.forEach(content => content.classList.remove("active"));
+
+                // Add active class to the clicked tab and corresponding content
+                tab.classList.add("active");
+                document.getElementById(tab.dataset.tab).classList.add("active");
+            });
+        });
+    </script>
+</body>
+</html>
