@@ -9,6 +9,9 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Full viewport height */
         }
         header {
             background: #333;
@@ -36,21 +39,21 @@
         }
         main {
             padding: 20px;
+            flex: 1; /* This pushes the footer to the bottom */
         }
         footer {
             background: #333;
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
             width: 100%;
-            bottom: 0;
         }
         img {
             display: block;
             margin: 20px auto;
             max-width: 300px;
             height: auto;
+        }
     </style>
 </head>
 <body>
@@ -72,85 +75,89 @@
             <img src="deepfake2.jpg" alt="DeepFake Example">
             <h2>Social Implications</h2>
             <p>
-        DeepFake technology has far-reaching social impacts, both positive and negative.  
-    </p>
-    <ul>
-        <li>
-            <strong>Disinformation and Misinformation:</strong>  
-            DeepFakes are increasingly used to create fake videos and audio, undermining trust in media.  
+                DeepFake technology has far-reaching social impacts, both positive and negative.  
+            </p>
             <ul>
-                <li><strong>Political Manipulation:</strong> Fake videos of politicians during elections can sway opinions and destabilize democracies.</li>
-                <li><strong>Social Harassment:</strong> Individuals, especially women, are targeted with non-consensual explicit DeepFakes, causing emotional distress.</li>
+                <li>
+                    <strong>Disinformation and Misinformation:</strong>  
+                    DeepFakes are increasingly used to create fake videos and audio, undermining trust in media.  
+                    <ul>
+                        <li><strong>Political Manipulation:</strong> Fake videos of politicians during elections can sway opinions and destabilize democracies.</li>
+                        <li><strong>Social Harassment:</strong> Individuals, especially women, are targeted with non-consensual explicit DeepFakes, causing emotional distress.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Erosion of Trust:</strong>  
+                    DeepFakes challenge the authenticity of media, fostering skepticism and leading to the "liar's dividend," where genuine content is dismissed as fake.  
+                </li>
+                <li>
+                    <strong>Economic Fraud:</strong>  
+                    Scammers use DeepFake voice cloning to impersonate CEOs or employees, leading to financial theft and cybercrime.  
+                </li>
             </ul>
-        </li>
-        <li>
-            <strong>Erosion of Trust:</strong>  
-            DeepFakes challenge the authenticity of media, fostering skepticism and leading to the \"liar's dividend,\" where genuine content is dismissed as fake.  
-        </li>
-        <li>
-            <strong>Economic Fraud:</strong>  
-            Scammers use DeepFake voice cloning to impersonate CEOs or employees, leading to financial theft and cybercrime.  
-        </li>
-    </ul>
-</section>
+        </section>
         <section>
             <h2>Ethical Perspectives</h2>
-             <p>
-        DeepFake technology can be analyzed through different ethical lenses to understand its broader implications:
-    </p>
-    <ul>
-        <li>
-            <strong>Deontological Lens:</strong>  
-            From this perspective, DeepFakes are unethical because they involve deception, violating the principle of truthfulness and autonomy.
-        </li>
-        <li>
-            <strong>Utilitarian Lens:</strong>  
-            The benefits of DeepFake technology (education, entertainment) are weighed against the harms (misinformation, harassment). The misuse far outweighs its positive impact when unregulated.
-        </li>
-        <li>
-            <strong>Virtue Ethics:</strong>  
-            Emphasizes responsible and honest use of DeepFake technology, urging developers and users to act with integrity and transparency.
-        </li>
-    </ul>
-</section>
+            <p>
+                DeepFake technology can be analyzed through different ethical lenses to understand its broader implications:
+            </p>
+            <ul>
+                <li>
+                    <strong>Deontological Lens:</strong>  
+                    From this perspective, DeepFakes are unethical because they involve deception, violating the principle of truthfulness and autonomy.
+                </li>
+                <li>
+                    <strong>Utilitarian Lens:</strong>  
+                    The benefits of DeepFake technology (education, entertainment) are weighed against the harms (misinformation, harassment). The misuse far outweighs its positive impact when unregulated.
+                </li>
+                <li>
+                    <strong>Virtue Ethics:</strong>  
+                    Emphasizes responsible and honest use of DeepFake technology, urging developers and users to act with integrity and transparency.
+                </li>
+            </ul>
+        </section>
         <section>
             <h2>Recommendations</h2>
             <p>
-        To mitigate the risks of DeepFake technology, the following actions are recommended:
-    </p>
-    <ul>
-        <li>
-            <strong>Technological Solutions:</strong>
+                To mitigate the risks of DeepFake technology, the following actions are recommended:
+            </p>
             <ul>
-                <li>Develop AI-powered detection tools to identify manipulated media in real-time.</li>
-                <li>Implement digital watermarking to tag authentic content, distinguishing it from fakes.</li>
+                <li>
+                    <strong>Technological Solutions:</strong>
+                    <ul>
+                        <li>Develop AI-powered detection tools to identify manipulated media in real-time.</li>
+                        <li>Implement digital watermarking to tag authentic content, distinguishing it from fakes.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Policy-Level Changes:</strong>
+                    <ul>
+                        <li>Enact regulations to criminalize malicious uses of DeepFake technology, such as disinformation campaigns.</li>
+                        <li>Strengthen penalties for non-consensual explicit DeepFake content.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Public Awareness and Education:</strong>
+                    <ul>
+                        <li>Launch campaigns to educate individuals on critically evaluating and identifying DeepFake content.</li>
+                        <li>Train media professionals to detect and prevent the spread of manipulated media.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Corporate Responsibility:</strong>
+                    <ul>
+                        <li>Social media platforms must filter harmful DeepFake content and flag suspicious media effectively.</li>
+                    </ul>
+                </li>
             </ul>
-        </li>
-        <li>
-            <strong>Policy-Level Changes:</strong>
-            <ul>
-                <li>Enact regulations to criminalize malicious uses of DeepFake technology, such as disinformation campaigns.</li>
-                <li>Strengthen penalties for non-consensual explicit DeepFake content.</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Public Awareness and Education:</strong>
-            <ul>
-                <li>Launch campaigns to educate individuals on critically evaluating and identifying DeepFake content.</li>
-                <li>Train media professionals to detect and prevent the spread of manipulated media.</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Corporate Responsibility:</strong>
-            <ul>
-                <li>Social media platforms must filter harmful DeepFake content and flag suspicious media effectively.</li>
-            </ul>
-        </li>
-    </ul>
-</section>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Team 7 IT-304-DL4</p>
+    </footer>
+</body>
+</html>
+
     </footer>
 </body>
 </html>
