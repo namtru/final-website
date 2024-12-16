@@ -25,6 +25,7 @@
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
         nav ul li {
             display: inline;
@@ -36,6 +37,8 @@
         }
         main {
             padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
         }
         footer {
             background: #333;
@@ -51,6 +54,23 @@
             height: auto;
             display: block;
             margin: 20px auto;
+        }
+        .highlight-box {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .references {
+            font-size: 0.9em;
+            margin-top: 30px;
+        }
+        .references ul {
+            list-style: none;
+            padding: 0;
+        }
+        .references ul li {
+            margin-bottom: 5px;
         }
     </style>
 </head>
@@ -71,16 +91,40 @@
     <main>
         <section>
             <h2>What is DeepFake Technology?</h2>
-            <p>DeepFake technology utilizes artificial intelligence, particularly deep learning algorithms, to create realistic but fabricated images, videos, or audio recordings. This technology can make it appear as though individuals have said or done things they never actually did.</p>
+            <p>DeepFake technology uses artificial intelligence—especially a type of machine learning called “deep learning”—to generate highly realistic but intentionally altered content. This can include videos, images, or audio that depict people doing or saying things they never actually did. The technology often relies on large amounts of data, like videos and images of real individuals, to train algorithms that can seamlessly combine and manipulate facial features, body movements, and voices.</p>
             <img src="deepfakeai.png" alt="DeepFake Example">
         </section>
+        
         <section>
             <h2>Why Does DeepFake Technology Matter?</h2>
-            <p>DeepFakes have significant implications across various sectors, including entertainment, politics, and cybersecurity. They challenge the authenticity of media, making it crucial to understand and address their potential impacts.</p>
+            <p>DeepFakes matter because they blur the lines between what is real and what is fabricated. As these synthetic media become more convincing, it becomes harder for the average person to tell the difference, raising serious concerns about:</p>
+            <ul>
+                <li><strong>Misinformation and Disinformation:</strong> DeepFakes can be used to spread false information about public figures, events, or institutions, influencing public opinion and democracy.</li>
+                <li><strong>Privacy and Consent:</strong> Individuals may appear in videos they never participated in, potentially damaging reputations, careers, and personal relationships.</li>
+                <li><strong>Security and Trust:</strong> In an era where we rely on digital media for news and communication, the inability to confirm authenticity can erode trust in our information ecosystem.</li>
+            </ul>
+            
+            <div class="highlight-box">
+                <p><strong>Key Insight:</strong> Understanding DeepFakes is not only about grasping the technology but also recognizing their power to shape our perceptions, influence societal debates, and challenge long-standing notions of truth.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Further Reading & References</h2>
+            <p>To gain more insight into DeepFake technology, its impacts, and how to identify it, we encourage you to explore the following sources:</p>
+            <div class="references">
+                <ul>
+                    <li><em>What the heck is a deepfake?</em></li>
+                    <li><em>What are deepfakes – and how can you spot them?</em></li>
+                    <li><em>What is A Deepfake?</em></li>
+                    <li><em>Artificial intelligence, deepfakes, and the uncertain future of truth</em></li>
+                </ul>
+                <p>These resources discuss the technology’s origins, potential uses, the difficulty in detecting manipulated content, and the broader implications for society as we navigate the “uncertain future of truth.”</p>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Team 7 IT-304-DL4 </p>
+        <p>&copy; 2024 Team 7 IT-304-DL4</p>
     </footer>
 </body>
 </html>
