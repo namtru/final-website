@@ -25,9 +25,10 @@
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
         nav ul li {
-            display: inline;
+            display: inline-block;
             margin: 0 10px;
         }
         nav ul li a {
@@ -36,6 +37,17 @@
         }
         main {
             padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
         }
         footer {
             background: #333;
@@ -45,6 +57,29 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+        .example-box {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .example-box h3 {
+            margin-top: 0;
+        }
+        .diagram {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .diagram img {
+            width: 80%;
+            max-width: 600px;
+        }
+        .tip-box {
+            background: #e0f5ff;
+            padding: 10px;
+            border-left: 4px solid #00aaff;
+            margin: 20px 0;
         }
     </style>
 </head>
@@ -64,25 +99,64 @@
     </nav>
     <main>
         <section>
-            <h2>Entertainment Industry</h2>
-            <p>DeepFake technology has revolutionized the entertainment industry by enabling filmmakers to create hyper-realistic digital effects. For example, it has been used to de-age actors, recreate deceased performers, and enhance visual storytelling.</p>
-            <p>Example: In the movie *Rogue One: A Star Wars Story*, DeepFake technology helped digitally recreate the late actor Peter Cushing for the character of Grand Moff Tarkin, blending seamlessly with live-action scenes.</p>
+            <h2>What are DeepFakes?</h2>
+            <p>DeepFakes are videos, images, or voices that have been manipulated using advanced artificial intelligence (AI). They can make it appear as though someone said or did something they never actually did. While this technology can be fun and creative, it also comes with responsibilities and risks.</p>
+            <div class="diagram">
+                <img src=deepfake_diagram_placeholder.png alt="Illustrative diagram explaining DeepFake creation process">
+                <p style="font-style: italic;">A simple illustration of how DeepFake models transform images or audio into realistic but altered media.</p>
+            </div>
         </section>
+
         <section>
-            <h2>Personalized Education and Training</h2>
-            <p>DeepFake technology is being used to generate personalized educational content, including virtual instructors and realistic training simulations. This has applications in medical training, language education, and corporate skill development.</p>
-            <p>Example: AI-driven avatars created with DeepFake technology can simulate patient interactions for medical students, providing realistic scenarios without requiring live participants.</p>
+            <h2>Applications in Entertainment</h2>
+            <p>DeepFakes have made an impact on movies, TV shows, and online media. They offer filmmakers and artists exciting new tools to tell stories in more convincing and visually striking ways.</p>
+            
+            <div class="example-box">
+                <h3>Example: Reviving Classic Actors</h3>
+                <p>Imagine watching a new movie starring an actor who passed away decades ago. In <em>Rogue One: A Star Wars Story</em>, the late actor Peter Cushing was brought back as Grand Moff Tarkin using DeepFake-like technology. This allowed the filmmakers to maintain story consistency and pay homage to classic characters, blending digital creations with live-action footage.</p>
+                <img src=rogue_one_tarkin_placeholder.jpg alt="A scene from Rogue One with a digitally recreated character">
+            </div>
+            
+            <p>Beyond Hollywood, smaller studios and online creators use DeepFakes to produce special effects that were once too expensive or complicated. They can recreate historical figures for documentaries or enhance performances without relying solely on costly CGI techniques.</p>
         </section>
+
+        <section>
+            <h2>Applications in Personalized Education & Training</h2>
+            <p>DeepFakes aren’t just for fun—they can also teach us new skills. By simulating realistic scenarios, they help learners practice in safe, controlled environments that feel almost real.</p>
+            
+            <div class="example-box">
+                <h3>Example: Medical Training Simulations</h3>
+                <p>Imagine medical students preparing for surgery. Instead of waiting for rare real-life cases, they can interact with virtual patients—AI-generated avatars that show realistic symptoms and reactions. DeepFake technology allows these avatars to have human-like facial expressions, voice tones, and body language, making the training experience more immersive and emotionally engaging.</p>
+                <img src=medical_training_simulation_placeholder.jpg alt="A medical student practicing with a virtual patient simulation on a computer screen">
+            </div>
+            
+            <p>Similar ideas apply to language learning, where virtual tutors with natural facial movements and speech can help students practice conversations. Corporate employees can rehearse negotiations or customer interactions with realistic virtual counterparts, building confidence before facing real clients.</p>
+        </section>
+
+        <section>
+            <h2>Why Are These Applications Important?</h2>
+            <p>DeepFakes open doors to exciting possibilities, but they also raise tough questions:</p>
+            <ul>
+                <li><strong>Are we sure what we see or hear is real?</strong> Politicians, public figures, and news reporters can be mimicked, possibly spreading misinformation and causing confusion in society.</li>
+                <li><strong>Who controls the content?</strong> Someone could misuse this technology to create non-consensual videos or offensive materials, violating personal privacy and safety.</li>
+                <li><strong>How do we keep trust?</strong> If detecting DeepFakes is hard, people might start doubting all digital content, making it tougher to trust the media we consume every day.</li>
+            </ul>
+            
+            <div class="tip-box">
+                <strong>Tip:</strong> The challenge is not just technical; it’s social and ethical. We must develop better detection tools, legal guidelines, and education so that people know how to recognize and respond to misleading content.
+            </div>
+        </section>
+        
         <section>
             <h2>Complexities and Social Challenges</h2>
-            <p>While DeepFakes have positive applications, their misuse has led to challenges such as:
-                <ul>
-                    <li>Spread of misinformation and fake news, especially in political campaigns.</li>
-                    <li>Privacy violations, including creating non-consensual explicit content.</li>
-                    <li>Difficulty in detecting manipulated media, eroding trust in digital communications.</li>
-                </ul>
-            </p>
-            <p>These challenges emphasize the need for robust detection tools and ethical guidelines to govern the use of DeepFake technology.</p>
+            <p>Using DeepFakes well is hard because:</p>
+            <ul>
+                <li><strong>Technical Skills:</strong> Creating high-quality DeepFakes requires expertise, powerful computers, and a lot of time. Not everyone can do it easily, but as the tools improve, more people might try.</li>
+                <li><strong>Ethical Boundaries:</strong> Even if the technology is easy to use, deciding when and why to use it is complicated. Should we recreate someone without their permission? Should we alter historical footage? These questions don’t have simple answers.</li>
+                <li><strong>Cultural Differences:</strong> Different communities have their own norms and rules. A DeepFake that’s acceptable in one culture might be offensive or illegal in another. We must understand these differences to prevent harm.</li>
+            </ul>
+            
+            <p>All these situations matter because they affect how we trust what we see, how we learn, and how we share stories. DeepFakes show us that technology can be a powerful tool for creativity and education—but only if we handle it responsibly and thoughtfully.</p>
         </section>
     </main>
     <footer>
